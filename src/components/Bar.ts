@@ -1,9 +1,7 @@
-import { createComponent } from "@lit-labs/react";
 import { customElement, html, LitElement } from "lit-element";
-import * as React from "react";
 
 @customElement("bar-element")
-export class BarElement extends LitElement {
+export class Bar extends LitElement {
   render() {
     return html`<span><slot></slot></span>`;
   }
@@ -11,10 +9,6 @@ export class BarElement extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    "bar-element": BarElement;
+    "bar-element": Bar;
   }
 }
-
-const Bar = createComponent(React, "bar-element", BarElement, {});
-
-export { Bar };
