@@ -1,4 +1,4 @@
-import { createComponent } from "@lit-labs/react";
+import { createComponent } from "../createComponent";
 import * as React from "react";
 import { Foo as FooElement } from "../components/Foo";
 
